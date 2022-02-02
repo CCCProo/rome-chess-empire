@@ -1,60 +1,52 @@
-<! DOCTYPE html>
-<html lang = "en">
-<head>
-<meta charset = "UTF-8">
-<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
-<title> ROME OF THE EMPIRE </title>
-<link rel = "stylesheet" href = "style.css">
-</head>
-<body>
-<main>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login + Firebase Database</title>
+         <!-- Cool Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+        <!-- Our stylesheet -->
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <div id="content_container">
+            <div id="form_container">
+                <div id="form_header_container">
+                    <h2 id="form_header"> Login + Firebase Database </h2>
+                </div>
 
-<a href="indexEN.html"> ENGLISH </a> <a href="indexRU.html"> RUSSIAN </a>
-</main>
-<nav>
-<ul>
+                <div id="form_content_container">
+                    <div id="form_content_inner_container">
+                        <input type="text" id="full_name" placeholder="Full name">
+                        <input type="email" id="email" placeholder="Email">
+                        <input type="password" id="password" placeholder="New Password">
 
-<li> <a href="indexRU"> HOME </a> </li>
-<li> <a href="republicRU.html"> REPUBLIC(NOT AVAILABLE) </a> </li>
-<li> <a href="anthemRU.html"> ANTHEM(NOT AVAILABLE)</a> </li>
-<li> <a href="currenciesRU.html"> CURRENCIES(NOT AVAILABLE)</a> </li>
-</ul>
-</nav>
-<main>
-		
-		
-		<div class="adaptivny-slayder">
-  		<input type="radio" name="kadoves" id="slaid1" checked>
-  		<input type="radio" name="kadoves" id="slaid2">
-  		<input type="radio" name="kadoves" id="slaid3">
-  		<input type="radio" name="kadoves" id="slaid4">
-  		
-   
-  		<div class="kadoves">
-  		<label for="slaid1"></label>
-  		<label for="slaid2"></label>
-  		<label for="slaid3"></label>
-  		<label for="slaid4"></label>
-  		
-  		</div>
-   
-  		<div class="adaptivny-slayder-lasekun">
- 			<div class="abusteku-deagulus">
-  	
+                        <input type="text" id="favourite_song" placeholder="The Best Song Ever">
+                        <input type="text" id="milk_before_cereal" placeholder="Milk Before Cereal? ( Yes | No )">
 
-  	
+                        <div id="button_container">
+                            <button onclick="login()">Login</button>
+                            <button onclick="register()">Register</button>
+                        </div>
 
-  	<img src="img1.jpg"/>
-  	<img src="img2.jpg"/>
-  	<img src="img3.jfif"/>
-  	<img src="img4.htm"/>
-  	
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
 
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
 
-  	</div>
-  </div>
-</div>
+    <!-- Our script must be loaded after firebase references -->
+    <script src="index.js"></script>
 
-	
-</body>
-</html>
+</html>s
